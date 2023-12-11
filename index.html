@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boary and Lingzhi</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+
+        #sketch-canvas {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1200px;
+            height: 675px;
+            overflow: hidden;
+        }
+
+        #background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            max-width: 100%;
+            max-height: 100%;
+            filter: brightness(20%);
+            z-index: -1;
+        }
+
+        #frame-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 99;
+        }
+
+        /* #loading-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            display: block;
+        } */
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://unpkg.com/p5.js-svg@1.5.1"></script>
+</head>
+
+<body>
+
+    <img id="frame-image" src="data/image/bg/frame.png" alt="Frame Image">
+    <canvas id="sketch-canvas"></canvas>
+    <script src="js/main.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/obstacle.js"></script>
+    <script src="js/flagPole.js"></script>
+    <script src="js/collectable.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/ui.js"></script>
+    <!-- <img id="loading-image" src="data/image/bg/loading.svg" alt="Loading Image"> -->
+    <img id="background-image" src="data/image/bg/hanpaopao.jpg" alt="Background Image">
+
+
+</body>
+
+</html>
