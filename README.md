@@ -93,6 +93,3 @@ Potential improvements include:
 - Improving responsiveness for different screen sizes
 - Refactoring the codebase into a more scalable architecture
 
-## Project Context
-
-This was an independent programming project completed as part of an introductory programming course. The original course requirements included using p5.js, building a game project, implementing obstacles, and creating a final flag-raising animation. I extended the project with additional mechanics, original art direction, animated scenery, collectible-based progression, and a more flexible level configuration system.
